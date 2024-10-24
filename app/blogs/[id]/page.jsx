@@ -42,22 +42,9 @@ const page = ({params}) => {
     </div>
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
       <Image className='border-4 border-white' src={data.image} alt='' width={1280} height={720}/>
-      <h1 className='my-8 text-[26px] font-semibold'>Introduction:</h1>
-      <p>{data.description}</p>
-      <h3 className='my-5 text-[18px] font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa, laboriosam mollitia et pariatur blanditiis.</h3>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
 
-      <h3 className='my-5 text-[18px] font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa, laboriosam mollitia et pariatur blanditiis.</h3>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
+      <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}></div>
 
-      <h3 className='my-5 text-[18px] font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa, laboriosam mollitia et pariatur blanditiis.</h3>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
-
-      <h3 className='my-5 text-[18px] font-semibold'>Conclusion</h3>
-      <p className='my-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsam debitis. Fugit ea sapiente, explicabo consequuntur, blanditiis cumque expedita repudiandae cum repellat, eum a dolorum ipsum hic esse temporibus quia modi labore! Eveniet, eum molestias incidunt explicabo fugiat exercitationem sunt.</p>
       <div className='my-24'>
         <p className='text-black font font-semibold my-4'>Share this article on social media</p>
         <div className='flex'>
