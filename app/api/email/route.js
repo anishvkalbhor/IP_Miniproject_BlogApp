@@ -1,5 +1,6 @@
 import { ConnectDB } from "@/lib/config/db";
 import { NextResponse } from "next/server";
+import EmailModel from "@/models/emailModel";
 
 const LoadDB = async () => {
     await ConnectDB();
